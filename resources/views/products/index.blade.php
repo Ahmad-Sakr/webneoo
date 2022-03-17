@@ -20,7 +20,7 @@
                 <h2>Artisanat</h2>
                 <h6>De L'IRAP</h6>
                 <p>Lors du pèlerinage d’un groupe de handicapés du Liban à Lourdes en 1960, deux jeunes filles promettent de vivre l’expérience d’une fraternité réelle solidaires sous un même toit.</p>
-                <button class="btn btn-primary">Explorer</button>
+                <a class="btn btn-primary" href="{{route('products.list', ['category' => 'artisanat'])}}">Explorer</a>
             </div>
             <div class="col-md-6">
                 <div class="section-image">
@@ -38,7 +38,7 @@
             <div class="col-10 offset-1">
                 <p class="caption-header"><span>Surgelés</span> De L'IRAP</p>
                 <p>Lors du pèlerinage d’un groupe de handicapés du Liban à Lourdes en 1960, deux jeunes filles.</p>
-                <button class="btn btn-primary">Explorer</button>
+                <a class="btn btn-primary" href="{{route('products.list', ['category' => 'surgeles'])}}">Explorer</a>
             </div>
         </div>
     </section>
@@ -64,7 +64,7 @@
                 <h2>Pâtisserie</h2>
                 <h6>De L'IRAP</h6>
                 <p>Lors du pèlerinage d’un groupe de handicapés du Liban à Lourdes en 1960, deux jeunes filles promettent de vivre l’expérience d’une fraternité réelle solidaires sous un même toit.</p>
-                <button class="btn btn-primary">Explorer</button>
+                <a class="btn btn-primary" href="{{route('products.list', ['category' => 'patisserie'])}}">Explorer</a>
             </div>
         </div>
     </section>

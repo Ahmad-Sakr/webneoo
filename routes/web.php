@@ -22,3 +22,5 @@ Route::view('/contact', 'contact.index')->name('contact.index');
 
 //Products
 Route::get('/produits', [ProductController::class, 'index'])->name('products.index');
+Route::get('/produits/categories/{category:slug}', [ProductController::class, 'listByCategory'])->name('products.list');
+Route::get('/produits/{product:slug}', [ProductController::class, 'details'])->name('products.details');

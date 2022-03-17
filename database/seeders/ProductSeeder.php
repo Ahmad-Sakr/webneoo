@@ -31,5 +31,19 @@ class ProductSeeder extends Seeder
                 ]);
             }
         }
+
+        $category = Category::query()->where('id', 2)->first();
+        if($category) {
+            foreach (['Chiche barak', 'Kebbe viande', 'Rkakat fromage', 'Rkakat fromage et thym'] as $product) {
+                $category->products()->create([
+                    'slug'   => Str::slug($product),
+                    'name'   => $product,
+                    'title'  => $product,
+                    'description'  => 'La vente des produits assure un soutien à la vie de la communauté et au budget de prise en charge des enfants et des adolescents sourds de l’institut.',
+                    'price'  => 140000,
+                    'image'  => 'public/products/' . Str::slug($product) . '.jpg',
+                ]);
+            }
+        }
     }
 }
