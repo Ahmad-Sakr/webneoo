@@ -1,0 +1,278 @@
+html {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/**********/
+/* Button */
+/*********/
+.btn {
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
+.btn.btn-primary {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/**********/
+/* Navbar */
+/*********/
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #EE7548;
+    border-bottom: 2px solid #EE7548;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #EE7548;
+}
+.nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+.navbar-nav .nav-link {
+    margin-top: 0.25rem;
+}
+
+/*******************/
+/* Main Bg Section */
+/*******************/
+.main-bg {
+    position: relative;
+    background-image: url("../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    border-bottom: solid 6px #EE7548;
+}
+.main-bg .bg-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.main-bg .bg-caption p {
+    font-size: 18px;
+    font-weight: 200;
+}
+.main-bg .bg-caption p.caption-header {
+    letter-spacing: -1px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.main-bg .bg-caption p.caption-header span {
+    font-weight: 800;
+}
+
+@media (max-width: 600px) {
+    .main-bg {
+        height: 700px;
+    }
+    .main-bg .bg-caption p {
+        font-size: 14px;
+    }
+    .main-bg .bg-caption p.caption-header {
+        font-size: 36px;
+        line-height: 32px;
+    }
+}
+
+/*********************/
+/* Artisanat Section */
+/*********************/
+.artisanat {
+    position: relative;
+}
+.artisanat .section-text {
+    text-transform: uppercase;
+    padding-top: 6rem;
+}
+.artisanat .section-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 24px;
+}
+.artisanat .section-text h6 {
+    font-size: 48px;
+    font-weight: 100;
+}
+.artisanat .section-text p {
+    text-transform: none;
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 500;
+    padding-right: 40%;
+}
+.artisanat .section-image {
+    padding-left: 10rem;
+}
+.artisanat .section-over-image {
+    position: absolute;
+    width: 15%;
+    bottom: 10%;
+}
+@media (max-width: 600px) {
+    .artisanat .section-text {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .artisanat .section-text h2 {
+        font-size: 36px;
+    }
+    .artisanat .section-text h6 {
+        font-size: 36px;
+    }
+    .artisanat .section-text p {
+        font-size: 14px;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .artisanat .section-image {
+        padding-left: 5rem;
+    }
+    .artisanat .section-over-image {
+        width: 40%;
+        left: 0;
+    }
+}
+
+/********************/
+/* Surgeles Section */
+/********************/
+.surgele {
+    position: relative;
+    text-align: center;
+}
+.surgele p {
+    font-weight: 500;
+    color: #ffffff;
+}
+.surgele p.caption-header {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    line-height: 30px;
+}
+.surgele p.caption-header span {
+    font-weight: 800;
+}
+.surgele .btn-primary {
+    margin-top: 2rem;
+    border-color: #ffffff;
+}
+@media (max-width: 600px) {
+    .surgele p.caption-header {
+        font-size: 36px;
+    }
+}
+
+/*********************/
+/* Pâtisserie Section */
+/*********************/
+.patisserie {
+    padding-bottom: 10rem;
+}
+.patisserie .section-text {
+    text-transform: uppercase;
+    padding: 1.5rem 7rem;
+}
+.patisserie .section-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 24px;
+}
+.patisserie .section-text h6 {
+    font-size: 48px;
+    font-weight: 100;
+}
+.patisserie .section-text p {
+    padding-right: 40%;
+    text-transform: none;
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 500;
+}
+@media (max-width: 600px) {
+    .patisserie {
+        padding-bottom: 6rem;
+    }
+    .patisserie .section-text {
+        padding: 2rem 0.5rem;
+        text-align: center;
+    }
+    .patisserie .section-text h2 {
+        font-size: 36px;
+    }
+    .patisserie .section-text h6 {
+        font-size: 36px;
+    }
+    .patisserie .section-text p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 14px;
+    }
+}
+
+/**********/
+/* Footer */
+/**********/
+footer {
+    margin-top: 10rem;
+    background-image: url("../img/footer.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 2rem 0;
+}
+footer .logo {
+    width: 80px;
+    height: auto;
+    /*float: right;*/
+}
+footer p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 10px;
+}
+footer p i {
+    margin-right: 2px;
+}
+@media (max-width: 600px) {
+    footer {
+        margin-top: 5rem;
+    }
+    footer .logo {
+        width: 60px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer .row {
+        text-align: center;
+    }
+}
