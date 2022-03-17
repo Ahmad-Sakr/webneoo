@@ -90,6 +90,9 @@ html {
     .main-bg {
         height: 700px;
     }
+    .main-bg .bg-caption {
+        padding: 0;
+    }
     .main-bg .bg-caption p {
         font-size: 14px;
     }

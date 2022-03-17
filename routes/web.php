@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/products', [ProductsController::class, 'index'])->name('products.index');
+Route::get('/produits', [ProductsController::class, 'index'])->name('products.index');
